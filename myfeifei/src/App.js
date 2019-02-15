@@ -13,7 +13,6 @@ import My from "./components/my/my";
 
 import "./common/css/reset.css";
 import "./common/js/flexble";
-import "./style/footer.css";
 
 
 class App extends Component {
