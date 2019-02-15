@@ -13,13 +13,15 @@ import My from "./components/my/my";
 
 import "./common/css/reset.css";
 import "./common/js/flexble";
-import "./footer.css";
+import "./style/footer.css";
+
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div className="App">
+          
           <Switch>
             <Route path="/home" component={Home}></Route>
             <Route path="/classify" component={Classify}></Route>
