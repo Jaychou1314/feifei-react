@@ -76,4 +76,5 @@ redux-thunk 异步数据请求
 react-loadable 懒加载
 immutable 解决了频繁的引入store
 redux-immutable
+http-promise-middleware  跨域
 

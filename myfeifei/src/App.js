@@ -14,23 +14,26 @@ import My from "./components/my/my";
 import "./common/css/reset.css";
 import "./common/js/flexble";
 
-
+import { Provider } from "react-redux";
+import store from "./store";
 class App extends Component {
   render() {
     return (
-      <Router>
-        <div className="App">
-          
-          <Switch>
-            <Route path="/home" component={Home}></Route>
-            <Route path="/classify" component={Classify}></Route>
-            <Route path="/message" component={Message}></Route>
-            <Route path="/shoppingCard" component={ShoppingCard}></Route>
-            <Route path="/my" component={My}></Route>
-          </Switch>
-          <Footer/>
-        </div>
-      </Router>
+      <Provider store = {store}>
+        <Router>
+          <div className="App">
+            <Switch>
+              <Route path="/home" component={Home}></Route>
+              <Route path="/classify" component={Classify}></Route>
+              <Route path="/message" component={Message}></Route>
+              <Route path="/shoppingCard" component={ShoppingCard}></Route>
+              <Route path="/my" component={My}></Route>
+            </Switch>
+            <Footer />
+          </div>
+        </Router>
+      </Provider>
+
     );
   }
 }

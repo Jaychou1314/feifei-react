@@ -9,19 +9,24 @@ export default class Footer extends Component {
             footerNavs: [
                 {
                     tit: "首页",
-                    name: "/home"
+                    name: "/home",
+                    icon: "&#xe653;"
                 }, {
                     tit: "分类",
-                    name: "/classify"
+                    name: "/classify",
+                    icon: "&#xe7f8;"
                 }, {
                     tit: "消息",
-                    name: "/message"
+                    name: "/message",
+                    icon: "&#xe642;"
                 }, {
                     tit: "购物车",
-                    name: "/shoppingCard"
+                    name: "/shoppingCard",
+                    icon: "&#x344b;"
                 }, {
                     tit: "我的",
-                    name: "/my"
+                    name: "/my",
+                    icon: "&#xe61a;"
                 },
             ]
         }
@@ -30,14 +35,40 @@ export default class Footer extends Component {
         let { footerNavs } = this.state;
         return (
             <ul className="footer">
-                {
-                    footerNavs.map((item, index) => {
-                        return <li key={index}>
-                            <i className="iconfont">&#xe643;</i>
-                            <NavLink to={item.name}>{item.tit}</NavLink>
-                        </li>
-                    })
-                }
+                <li>
+                    <NavLink to="/home">
+                        <i className="iconfont">&#xe653;</i>
+                        <span>首页</span>
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink to="/classify">
+                        <i className="iconfont">&#xe7f8;</i>
+                        <span>分类</span>
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink to="/message">
+                        <i className="iconfont">&#xe642;</i>
+                        <span>消息</span>
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink to="/shoppingCard">
+                        <i className="iconfont">&#x344b;</i>
+                        <span>购物车</span>
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink to="/my">
+                        <i className="iconfont">&#xe61a;</i>
+                        <span>我的</span>
+                    </NavLink>
+                </li>
             </ul>
         )
 
