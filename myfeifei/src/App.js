@@ -13,7 +13,7 @@ import My from "./components/my/my";
 
 import "./common/css/reset.css";
 import "./common/js/flexble";
-
+import "../node_modules/swiper/dist/css/swiper.min.css"
 import {Provider} from "react-redux";
 import store from "./store";
 class App extends Component {

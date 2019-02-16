@@ -1,4 +1,4 @@
-import {createStore} from "redux";
+import {createStore,applyMiddleware} from "redux";
 import {combineReducers} from "redux-immutable";
 import thunk from "redux-thunk";
 import Classify from "./reducers/classify";
@@ -14,5 +14,5 @@ const reducers = combineReducers({
     My,
     ShoppingCart
 })
-const store = createStore(reducers);
+const store = createStore(reducers,applyMiddleware(thunk));
 export default store;
