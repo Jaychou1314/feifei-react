@@ -1,5 +1,6 @@
 import {createStore,applyMiddleware} from "redux";
 import {combineReducers} from "redux-immutable";
+import thunk from "redux-thunk";
 import Classify from "./reducers/classify";
 import Home from "./reducers/home";
 import Message from "./reducers/message";

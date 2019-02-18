@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "better-scroll": "^1.14.1",
+>>>>>>> zj
     "http-proxy-middleware": "^0.19.1",
     "i": "^0.3.6",
     "immutable": "^4.0.0-rc.12",
@@ -15,6 +19,7 @@
     "redux": "^4.0.1",
     "redux-immutable": "^4.0.0",
     "redux-thunk": "^2.3.0",
+    "swiper": "^4.4.6",
     "whatwg-fetch": "^3.0.0"
   },
   "scripts": {
