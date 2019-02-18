@@ -14,12 +14,12 @@ import My from "./components/my/my";
 import "./common/css/reset.css";
 import "./common/js/flexble";
 import "../node_modules/swiper/dist/css/swiper.min.css"
-import {Provider} from "react-redux";
+//import {Provider} from "react-redux";
 import store from "./store";
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
+      //<Provider store={store}>
         <Router>
         <div className="App">
           
@@ -33,7 +33,7 @@ class App extends Component {
           <Footer/>
         </div>
       </Router>
-      </Provider>
+     // </Provider>
       
     );
   }

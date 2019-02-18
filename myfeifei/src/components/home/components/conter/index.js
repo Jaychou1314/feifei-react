@@ -15,7 +15,7 @@ import {bannerImg,classImg} from "../../../../action/home/actionCreator";
     console.log(classList);
      return(
          <div id="homeConter">
-             <Banner bannerList={bannerList}/>
+        <Banner bannerList={bannerList}/>
          <Class classList={classList}/>
          <SkinCare/>
          <Snack/>

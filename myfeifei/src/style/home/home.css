@@ -5,7 +5,12 @@
     flex-direction:column;
     font-size: .3rem;
     overflow: auto;
-}
+  }
+  #top{
+      width: 100%;
+      height: .88rem;
+      overflow: hidden;
+  }
 #bottom{
     width: 100%;
     flex: 1;
@@ -33,8 +38,8 @@
 #homeConter{
     width:100%;
     height: 100%;
-    /* flex: 1;
-    overflow: hidden; */
+    flex: 1;
+    overflow: hidden;
 }
 .swiper-container{
     width: 100%;
