@@ -13,18 +13,14 @@ import My from "./components/my/my";
 
 import "./common/css/reset.css";
 import "./common/js/flexble";
-<<<<<<< HEAD
 
 import { Provider } from "react-redux";
-=======
 import "../node_modules/swiper/dist/css/swiper.min.css"
 //import {Provider} from "react-redux";
->>>>>>> zj
 import store from "./store";
 class App extends Component {
   render() {
     return (
-<<<<<<< HEAD
       <Provider store = {store}>
         <Router>
           <div className="App">
@@ -40,24 +36,22 @@ class App extends Component {
         </Router>
       </Provider>
 
-=======
-      //<Provider store={store}>
-        <Router>
-        <div className="App">
+    //   //<Provider store={store}>
+    //     <Router>
+    //     <div className="App">
           
-          <Switch>
-            <Route path="/home" component={Home}></Route>
-            <Route path="/classify" component={Classify}></Route>
-            <Route path="/message" component={Message}></Route>
-            <Route path="/shoppingCard" component={ShoppingCard}></Route>
-            <Route path="/my" component={My}></Route>
-          </Switch>
-          <Footer/>
-        </div>
-      </Router>
-     // </Provider>
+    //       <Switch>
+    //         <Route path="/home" component={Home}></Route>
+    //         <Route path="/classify" component={Classify}></Route>
+    //         <Route path="/message" component={Message}></Route>
+    //         <Route path="/shoppingCard" component={ShoppingCard}></Route>
+    //         <Route path="/my" component={My}></Route>
+    //       </Switch>
+    //       <Footer/>
+    //     </div>
+    //   </Router>
+    //  // </Provider>
       
->>>>>>> zj
     );
   }
 }
