@@ -3,6 +3,7 @@
 import React,{Component} from "react";
 // import "../../common/css/iconfont/iconfont.css";
 import RightNav from "../classify/rightNav";
+import "../../style/classify/header.css";
 class header extends Component{
     constructor(){
         super();
@@ -19,10 +20,10 @@ class header extends Component{
                 {icon?<i className="iconfont">&#xe6bc;</i>:""}
                 
                 <div>
-                    {com=="home"?"":<i className="iconfont">&#xe643;</i>}
+                    {com=="home"?"":<i className="iconfont" >&#xe643;</i>}
                     <input type="text" placeholder="搜索商品"/>
                 </div>
-                {com=="home"?<i className="iconfont">&#xe643;</i>:<i 
+                {com=="home"?<i className="iconfont colorWhite">&#xe643;</i>:<i 
                 className="iconfont" onClick = {this.showRightNav.bind(this)}>
                 &#xe637;
                 {flag==true?<RightNav/>:""}

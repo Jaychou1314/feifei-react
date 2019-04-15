@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		ul li{
+			list-style: none;
+		}
+	/* 	ul{
+			width:300px;
+			height:300px;
+			position: fixed;
+			left:0;
+			top:0;
+			right: 0;
+			bottom:0;
+			margin:auto;
+			transform-style: preserve-3d;
+			transform: rotateY(30deg) rotate(60deg);
+		}
+		ul li{
+			width:300px;
+			height: 300px;
+			position: absolute;
+			opacity: 0.3;
+		}
+		ul li:nth-child(1){
+			background:cadetblue;
+			transform: translateZ(150px);
+		}
+		ul li:nth-child(2){
+			background:chartreuse;
+			transform: translateZ(-150px);
+		}
+		ul li:nth-child(3){
+			background:olive;
+			transform: translateX(-150px) rotateY(90deg);
+		}
+		ul li:nth-child(4){
+			background:olive;
+			transform: translateX(150px) rotateY(90deg);
+		}
+		ul li:nth-child(5){
+			background:orange;
+			transform: translateY(-150px) rotateX(90deg);
+		}
+		ul li:nth-child(6){
+			background:orchid;
+			transform: translateY(150px) rotateX(90deg);
+		} */
+        input{
+            border: none;
+            outline: medium;
+            background:no-repeat 0 0 scroll #EEEEEE;
+        }
+		</style>
+	</head>
+	<body>
+        <input type="text" />
+	</body>
+</html>
+<script>
+    function sort(arr){
+        for(let i = 0;i<arr.length;i++){
+           for(let j = i ; j<=arr.length;j++){
+               if(arr[i]>=arr[j]){
+                   [arr[i],arr[j]]=[arr[j],arr[i]];
+               }
+           }
+        }
+        return arr;
+    }
+   var a=  sort([4,5,2,-1,0,-100])
+   console.log(a)
+</script>

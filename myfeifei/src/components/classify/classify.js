@@ -1,6 +1,5 @@
 import React,{Component} from "react";
 import Header from "../common/header";
-import "../../style/classify/header.css";
 import {connect} from "react-redux";
 import Content  from  "./content";
 import Navs from  "./navs";

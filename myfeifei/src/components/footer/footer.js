@@ -28,7 +28,8 @@ export default class Footer extends Component {
                     name: "/my",
                     icon: "&#xe61a;"
                 },
-            ]
+            ],
+            token:""
         }
     }
     render() {
@@ -64,7 +65,7 @@ export default class Footer extends Component {
                 </li>
 
                 <li>
-                    <NavLink to="/my">
+                    <NavLink to={this.state.token?"/my":"/login"}>
                         <i className="iconfont">&#xe61a;</i>
                         <span>我的</span>
                     </NavLink>
@@ -72,5 +73,10 @@ export default class Footer extends Component {
             </ul>
         )
 
+    }
+    componentDidMount(){
+        this.setState({
+            token:localStorage.getItem("token")
+        })
     }
 }

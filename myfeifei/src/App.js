@@ -8,7 +8,8 @@ import Classify from "./components/classify/classify";
 import Message from "./components/message/message";
 import ShoppingCard from "./components/shoppingCart/shoppingCart";
 import My from "./components/my/my";
-
+import GoodsList from "./components/classify/goodsList";
+import Login from "./components/my/login";
 // import  "./router/home/home";
 
 import "./common/css/reset.css";
@@ -27,7 +28,10 @@ class App extends Component {
               <Route path="/classify" component={Classify}></Route>
               <Route path="/message" component={Message}></Route>
               <Route path="/shoppingCard" component={ShoppingCard}></Route>
+              <Route path="/goodsList" component={GoodsList}></Route>
+              
               <Route path="/my" component={My}></Route>
+              <Route path="/login" component={Login}></Route>
             </Switch>
             <Footer />
           </div>
