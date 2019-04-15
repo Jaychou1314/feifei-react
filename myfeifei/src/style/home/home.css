@@ -1,0 +1,130 @@
+#home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    font-size: .3rem;
+    overflow: auto;
+  }
+  #top{
+      width: 100%;
+      height: .88rem;
+      overflow: hidden;
+  }
+#bottom{
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+}
+#homeHeader{
+    width: 100%;
+    height: .88rem;
+    background: #000;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#homeInput{
+    width: 80%;
+    height: 70%;
+    border-radius: .4rem;
+
+}
+.iconfont{
+    color: #fff;
+    font-size: .4rem;
+}
+#homeConter{
+    width:100%;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+}
+.swiper-container{
+    width: 100%;
+    height: 1.96rem;
+    
+}
+#banner{
+    width: 100%;
+    height: 2.76rem;
+}
+#banner>ul>li>img{
+    width: 100%;
+    height: 1.96rem;
+    
+}
+.swiper-slide>img{
+    width: 100%;
+    height: 1.96rem;
+}
+#notice{
+    width: 100%;
+    height: .8rem;
+    background: #ccc;
+    display: flex;
+    justify-content: space-between;
+align-items: center; 
+}
+#icon{
+    color:#c33;
+  font-weight: 900;
+   font-size: .4rem;
+   padding: 0 .1rem;
+}
+.Festival{
+    width: 100%;
+    height: 5.22rem;
+}
+.class{
+    width: 100%;
+    height: 1.72rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.class>li{
+    width: 25%;
+    height: 1.72rem;
+    margin: .4rem .1rem .2rem .1rem;
+}
+.class>li>img{
+width: 100%;
+height: 100%;
+}
+.day{
+    width: 100%;
+    height: .96rem;
+}
+.eat{
+    widows: 100%;
+    height: 2.58rem;
+}
+.eat>img{
+    width: 100%;
+    height: 100%;
+}
+#a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    overflow: auto;
+}
+#b{
+    width: 100%;
+    height: .3rem;
+background: #f0f;
+}
+#c{
+    width: 100%;
+     flex: 1;
+     overflow: auto;
+background: #00f;
+}
+#d{
+    width: 100%;
+    height: .3rem;
+background: #f00;
+}
